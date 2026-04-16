@@ -6,3 +6,17 @@
     --color-secondary: #a9dfd8;
     --color-grayText: #87888c;
 }
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
