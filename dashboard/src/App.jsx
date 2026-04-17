@@ -9,7 +9,6 @@ import Sidebar from "./Components/Sidebar"
 import Product from "./Components/Product"
 import Profile from "./Components/Profile"
 import SalesReport from "./Components/SalesReport"
-import Error from "./Components/Error"
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +28,16 @@ function App() {
         <Route path="product" element={<Product />} />
         <Route path="profile" element={<Profile />} />
         <Route path="salesreport" element={<SalesReport />} />
-        <Route path="*" element={<Error />} />
       </Route>
+      <Route
+            path="*"
+            element={
+              <div className="text-center flex flex-col items-center justify-center text-5xl  w-full">
+                <span className="text-red-500 ">404!</span>
+                <span className="text-white text-3xl">Page is not found</span>
+              </div>
+            }
+          />
     </Routes>
     </div>
 

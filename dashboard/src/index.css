@@ -7,6 +7,9 @@
     --color-grayText: #87888c;
 }
 
+body {
+color: white !important;
+}
 .container {
     max-width: 1400px;
     margin: 0 auto;
