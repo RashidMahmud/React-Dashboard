@@ -18,8 +18,15 @@ function Navbar({toggleSidebar}) {
       <input type='text' placeholder='Search For Something' className='bg-transparent text-gray-300 border-none
       w-full outline-none'></input>
     </div>
-    </div>
 
+    <div className='flex items-center justify-center gap-x-2 '>
+      <div className='relative'>
+      <div className='absolute bg-red-500 rounded-full w-2 h-2 top-0.75 right-1.25'></div>
+      <IoMdNotificationsOutline className='text-gray-400 text-[25px] md:text-[30px] cursor-pointer' />
+      </div>
+      <img src={User} alt='User' className='w-10 h-10 rounded-full cursor-pointer' />
+    </div>
+    </div>
     </nav>
   )
 }
